@@ -1,0 +1,26 @@
+{
+  "name": "mummy-daddy-pos",
+  "version": "1.0.0",
+  "description": "POS System for Mummy and Daddy Business - Uganda Shillings",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w packages/web & npm run dev -w packages/server",
+    "build": "npm run build -w packages/web & npm run build -w packages/desktop & npm run build -w packages/mobile",
+    "install-all": "npm install && npm install -w packages/web && npm install -w packages/desktop && npm install -w packages/mobile && npm install -w packages/server && npm install -w packages/shared",
+    "lint": "npm run lint -ws",
+    "test": "npm run test -ws"
+  },
+  "keywords": [
+    "pos",
+    "point-of-sale",
+    "business-management",
+    "inventory",
+    "sales",
+    "uganda"
+  ],
+  "author": "MacMaron78",
+  "license": "MIT"
+}
